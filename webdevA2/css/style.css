@@ -1,0 +1,302 @@
+/*addeth thoust fontes*/
+@font-face {
+    font-family: pixelmplus;
+    src: url(../fonts/pixelmplus.ttf);
+}
+/*norma css styleing*/
+body{
+background: linear-gradient(180deg,rgba(146, 182, 232, 1) 0%, rgba(67, 109, 186, 1) 50%, rgb(44, 51, 126) 100%);}
+
+*{
+    box-sizing:border-box; 
+    margin:0;
+    font-family: pixelmplus;
+    text-align:center;
+    color:rgb(50, 24, 134);
+    line-height: 130%;
+}
+
+.inputcss {
+        background-color:rgb(207, 229, 255);
+        border:solid;
+        border-color:rgb(50, 24, 134);
+}
+
+.lighten *{
+    color:rgb(158, 203, 255);
+}
+img{
+    margin: 25px 0px 25px 0px;
+    width:75%;
+    max-width: 100%;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.inmain{
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 3px solid;
+    border-color:rgb(67, 44, 196);
+    border-radius: 5px;
+}
+.navi{
+    flex: 1;
+background: linear-gradient(180deg,rgb(180, 207, 245) 0%, rgb(75, 124, 215) 50%, rgb(19, 24, 81) 100%);
+}
+.content{
+background: linear-gradient(180deg,rgb(180, 207, 245) 0%, rgb(75, 124, 215) 50%, rgb(19, 24, 81) 100%);
+    flex: 5;
+}
+.shars{
+    flex: 1;
+background: linear-gradient(180deg,rgb(180, 207, 245) 0%, rgb(75, 124, 215) 50%, rgb(19, 24, 81) 100%);
+}
+.mainnav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mainnavbtn{
+    padding: 5px 30px 5px 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 3px solid;
+    border-color:rgb(67, 44, 196);
+    border-radius: 5px;
+background: linear-gradient(180deg,rgb(180, 207, 245) 0%, rgb(133, 168, 233) 50%, rgb(115, 124, 226) 100%);
+}
+.mainnavbtn:hover{
+ 
+    background: linear-gradient(180deg, rgb(115, 124, 226) 0%, rgb(133, 168, 233) 50%, rgb(180, 207, 245) 100%);
+    transition: width 2s;
+}
+.mainnavbtn:active{
+ 
+    background:rgb(115, 124, 226);
+    transition: width 2s;
+}
+.innav{
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    border: 3px solid;
+    border-color:rgb(67, 44, 196);
+    border-radius: 5px;
+background: linear-gradient(180deg,rgb(180, 207, 245) 0%, rgb(133, 168, 233) 50%, rgb(115, 124, 226) 100%);
+}
+
+.italics{
+    font-style:italic;
+}
+
+.content section{
+margin-top: 10px;
+margin-bottom: 60px;
+}
+.content article{
+margin-top: 5px;
+margin-bottom: 20px;
+}
+.flextype{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sharks{
+    flex:2;
+}
+.stats{
+    flex:1;
+}
+.stats p{
+    text-align:left;
+    font-size: 14px;
+}
+.stats h4{
+    text-align:left;
+}
+
+.sharpic{
+    width:95%;
+}
+/*css spraites*/
+.spritehuman {
+	background: url('../images/fis.png') no-repeat -4px -11px;
+	width: 112px;
+	height: 146px;
+}
+.spriteturtle {
+	background: url('../images/fis.png') no-repeat -132px -10px;
+	width: 140px;
+	height: 148px;
+}
+.spriteseal {
+	background: url('../images/fis.png') no-repeat -289px -11px;
+	width: 107px;
+	height: 147px;
+}
+
+.minigame{
+            display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+.gaming{
+    margin-top:20px;
+    width:400px;
+    height:500px;
+    background:rgb(141, 184, 243);
+    border: 3px solid rgb(67, 44, 196);
+}
+/*transitoines on hova and clik*/
+#start{
+    margin-top: 10px;
+    border: 3px solid;
+    border-color:rgb(67, 44, 196);
+    border-radius: 5px;
+background: linear-gradient(180deg,rgb(180, 207, 245) 0%, rgb(133, 168, 233) 50%, rgb(115, 124, 226) 100%);
+}
+#start:hover{
+ 
+    background: linear-gradient(180deg, rgb(115, 124, 226) 0%, rgb(133, 168, 233) 50%, rgb(180, 207, 245) 100%);
+    transition: width 2s;
+}
+#start:active{
+ 
+    background:rgb(115, 124, 226);
+    transition: width 2s;
+}
+/*relative so can use 4 js anim*/
+.gameobj{
+    position:relative;
+}
+
+
+/*animationes*/
+.peak{
+    width:1px;
+    height:30px;
+    background:limegreen;
+    border:solid;
+      position: relative;
+  animation-name: peak;
+  animation-duration: 3s;  
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes peak {
+  from {width: 1px;}
+  to {width:300px; background-color: limegreen;}
+}
+.high{
+    width:1px;
+    height:30px;
+    background: greenyellow;
+        border:solid;
+      position: relative;
+  animation-name: high;
+  animation-duration: 3s;  
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes high {
+  from {width: 1px;}
+  to {width: 230px; background-color: greenyellow;}
+}
+.mid{
+    width:1px;
+    height:30px;
+    background: yellow;
+        border:solid;
+      position: relative;
+  animation-name: mid;
+  animation-duration: 3s;  
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes mid {
+  from {width: 1px;}
+  to {width: 150px; background-color:yellow;}
+}
+.low{
+    width:1px;
+    height:30px;
+    background:orange;
+        border:solid;
+      position: relative;
+  animation-name: low;
+  animation-duration: 3s;  
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes low {
+  from {width: 1px;}
+  to {width: 100px; background-color: orange;}
+}
+
+.bad{
+    width:1px;
+    height:30px;
+    background:orangered;
+        border:solid;
+      position: relative;
+  animation-name: bad;
+  animation-duration: 3s;  
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes bad {
+  from {width: 1px;}
+  to {width: 60px; background-color: orangered;}
+}
+.no{
+    width:1px;
+    height:30px;
+    background:red;
+        border:solid;
+      position: relative;
+  animation-name: no;
+  animation-duration: 3s;  
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes no {
+  from {width: 1px;}
+  to {width: 30px; background-color: red;}
+}
+@media (max-width:800px){
+    /*make font smaller for h1 to fit and flex box stack on top*/
+    h1{
+        font-size: 20px;
+    }
+    .navi{
+    flex: 100%;
+    background: linear-gradient(180deg,rgb(180, 207, 245) 0%, rgb(133, 176, 255) 50%, rgb(101, 113, 244) 100%);
+}
+.content{
+    flex: 100%;
+}
+.shars{
+    flex: 100%;
+}
+
+.sharks{
+    flex:100%;
+}
+.stats{
+    flex:100%;
+}
+/*no sho qr on fone*/
+.qr{
+    display: none;
+}
+}
